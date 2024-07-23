@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+<script>
+    const tom = {name: "Tom", age: 37};
+    const people=[{name:"Nazar", age:22},{name:"Sam", age:32},{name:"Bob",age:24}]
+    const markup = `<ul>
+    ${people.map(person => `<li>${person.name}</li>`)}
+</ul>`;
+
+    document.body.innerHTML = markup;
+</script>
+</body>
+</html>

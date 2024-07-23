@@ -84,13 +84,17 @@ function createUser3(name, age, gender){
     this.gender=gender
 }
 
-const john = new createUser3("John", 5, 'M')
-console.log(john)
+const john = new createUser3("John", 5, 'M');
+console.log(john);
+
 function printUser3(user){
     console.log(user)
 }
 printUser3(john)
-const users=[new createUser3("Igor",27,'M'), new createUser3("Yarik",27,'M'), new createUser3("Olya",44,'W')];
+
+const users=[new createUser3("Igor",27,'M'),
+    new createUser3("Yarik",27,'M'),
+    new createUser3("Olya",44,'W')];
 for (const user of users) {
     console.log(user)
 }
@@ -104,7 +108,7 @@ function Employee(name, age){
     this.name = name;
     this.age = age;
 }
-const vasya= new People("Vasya",22)
-const peta=new Employee("Petro",12)
-console.log(vasya instanceof People)
-console.log(vasya instanceof Employee)
+const vasya= new People("Vasya",22);
+const peta=new Employee("Petro",12);
+console.log(vasya instanceof People);
+console.log(vasya instanceof Employee);
